@@ -1,0 +1,122 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.header-container{
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 768px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  align-items: center;
+}
+
+.header__logo {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+  transition: 0.3s;
+}
+
+.header__logo:hover {
+  filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(297deg) brightness(96%) contrast(104%);
+  cursor: pointer;
+}
+
+.header__list{
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  display: flex;
+  gap: 40px;
+}
+
+.header__item:hover{
+  color: rgb(187, 183, 121);
+  cursor: pointer;
+}
+
+main{
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 768px;
+  height: calc(100vh - 120px);
+  min-height: 280px;
+  background-image: url("./assets/img/forest.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.main__play{
+  background-image: url('./assets/svg/play.svg');
+  background-size: 160px;
+  width: 160px;
+  height: 160px;
+  transition: 0.7s;
+}
+
+.main__play:hover{
+  filter: brightness(75%);
+}
+
+.main__pause{
+  background-image: url('./assets/svg/pause.svg');
+}
+
+.footer-container{
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 768px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.left-part{
+  display: flex;
+  gap: 20px;
+}
+
+.footer__github:hover{
+  color: rgb(187, 183, 121);
+  transition: 0.5s;
+}
+
+.footer__rss:hover{
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+  transition: 0.5s;
+}
+
+.header__nav_active{
+  color: rgb(187, 183, 121);
+}
